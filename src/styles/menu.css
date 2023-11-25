@@ -1,0 +1,65 @@
+.menu {
+    height: 40px;
+    display: flex;
+    gap:10px;
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.menu-item {
+    font-family: 'Chewy', cursive;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    flex: 1;
+    min-width: auto;
+    transition: .2s;
+    opacity: .9;
+    min-width: 125px;
+    box-sizing: border-box;
+}
+.menu-item:hover {
+    box-shadow: 5px 5px 10px;
+    opacity: 1;
+}
+#hola {
+    background-color: #fa4189;
+    color: #e8e750;
+}
+#destinos {
+    background-color: #ff95d6;
+    color: #f8176f;
+}
+#info {
+    background-color: #f8d750;
+    color: #38b6ff;
+}
+#tips {
+    background-color: #c1ff72;
+    color: #5271ff;
+}
+#tienda {
+    background-color: #2b4eed;
+    color: #5ce1e6;
+}
+#descuentos {
+    background-color: #94bb64;
+    color: #fa4189;
+}
+
+
+@media screen and (max-width: 880px) {
+    .menu {
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+    
+    
+  }

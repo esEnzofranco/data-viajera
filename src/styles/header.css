@@ -1,0 +1,53 @@
+.header {
+    padding: 10px;
+    display: flex;
+    background-image: url('../images/travel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    position: relative;
+}
+.header-a {
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+    padding: 15px;
+    position: relative;
+}
+.brand-background {
+    margin: auto;
+    height: 100%;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top:0;
+    opacity: .4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.header-a:hover {
+    box-shadow: 5px 5px 10px;
+    border-radius: 10px;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+.brand-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    font-size: 30px;
+}
+.subtitle {
+    font-size: 20px;
+}
+.title, .subtitle {
+    margin: 0;
+    font-family: 'Patrick Hand SC', cursive;
+    z-index: 2;
+}
