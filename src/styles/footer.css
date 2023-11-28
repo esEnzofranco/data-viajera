@@ -1,0 +1,28 @@
+#footer {
+    width: 100%;
+    background-color: #969696;
+    border-radius: 5px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px gray;
+    margin-top: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+#footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+#footer p {
+    color: white;
+    font-family: 'Patrick Hand SC', cursive;
+}
+.footer-image {
+    width: 35px;
+    height: 35px;
+}

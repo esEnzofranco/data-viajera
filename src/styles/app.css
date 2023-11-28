@@ -1,0 +1,7 @@
+.App {
+    width: 98.7vw;
+    min-height: 100vh;
+    position: relative;
+    padding:10px;
+    box-sizing: border-box;
+}
