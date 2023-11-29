@@ -1,3 +1,11 @@
+.post-link {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
 .post {
     overflow: hidden;
     border-radius: 5px;
@@ -8,58 +16,62 @@
     position: relative;
     width: 100%;
 }
-.title-background {
-    position: absolute;
-    height: 30%;
-    width: 100%;
-    background-color: white;
-    opacity: .5;
-    bottom: 0;
-    transition: .4s;
-    z-index: 1
-}
 .title-container {
     position: absolute;
     bottom: 0;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    padding: 15px;
-    box-sizing: border-box;
+    padding: 15px 0;
+    background-color: rgba(255, 255, 255, 0.48);
+    width: 100%;
+}
+.collapse {
+    animation: collapseHeight .5s ease forwards; 
 }
 .open {
-    height: 100%;
     box-sizing: border-box;
-    padding: 10px;
-}
-.title-background-open {
-    opacity: .8;
+    animation: expandHeight .6s ease forwards;
 }
 .post-title {
     font-size: 20px;
     font-weight: bold;
-    margin: 5px 0 0;
-    font-family: 'Quicksand', sans-serif;
+    margin: 5px 0 ;
     color: rgb(42, 41, 41);
-    z-index: 2;
     font-family: 'Baloo 2', sans-serif;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .excerpt-container {
     display: none;
 }
 .excerpt-container p {
     box-sizing: border-box;
+    font-family: 'Baloo 2', sans-serif;
     overflow: visible;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
 }
 .excerpt-open {
     display: block;
-    z-index: 2;
-    font-family: 'Baloo 2', sans-serif;
-    text-align: center;
-    box-sizing: border-box;
-    padding:  0 10px;
 }
 .thumbnail {
     height: 100%;
+}
+
+@keyframes expandHeight {
+    from {
+        height: 72px; 
+    }
+    to {
+        height: 100%; 
+    }
+}
+@keyframes collapseHeight {
+    from {
+        height: 86%; 
+    }
+    to {
+        height: 42px; 
+    }
 }

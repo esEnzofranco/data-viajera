@@ -1,14 +1,13 @@
 import React from "react";
 import '../styles/loading-component.css'
-import plane from '../images/airplane.png';
+import loading from '../images/loading.png';
+import earth from '../images/earth.png';
 
 const LoadingComponent = () => {
-    return(
-        <div className="loading-component-container">
-            <div className="loading-component">
-                <img className="plane" src={plane} alt="plane"/>
-                <p className="loading"><br/><br/>Cargando...</p>
-            </div>
+    return (
+        <div className="loading-component">
+            <img className="loading" src={loading} alt="plane" />
+            <img className="earth" src={earth} alt="earth" />
         </div>
     )
 }

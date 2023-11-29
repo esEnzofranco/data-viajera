@@ -11,7 +11,6 @@ const PostsGrid = () => {
         const data = await fetch(url);
         const postsList = await data.json();
         setPosts(postsList)
-        console.log(postsList)
     }
 
     useEffect(() => {
@@ -19,10 +18,12 @@ const PostsGrid = () => {
     }, [])
 
     return (
-        <div id="posts-grid">
-            {posts.map((post, index) => (
-                <Post key={index} imageId={post.featured_media} title={post.title.rendered} excerpt={post.excerpt.rendered} />
-            ))}
+        <div id="post-grid-container">
+            <div id="posts-grid">
+                {posts.map((post, index) => (
+                    <Post key={index} postId={post.id} imageId={post.featured_media} title={post.title.rendered} excerpt={post.excerpt.rendered} />
+                ))}
+            </div>
         </div>
     )
 }

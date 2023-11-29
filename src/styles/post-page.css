@@ -1,0 +1,18 @@
+#post-page-container {
+    box-sizing: border-box;
+}
+#image-container {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+}
+#post-page-image {
+    max-height: 400px;
+    width: auto;
+}
+#post-title, #subtitle-container {
+    text-align: center;
+    margin: 10px 0;
+    font-family: 'Baloo 2', sans-serif;
+}

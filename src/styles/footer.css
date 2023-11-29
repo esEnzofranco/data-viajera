@@ -1,6 +1,7 @@
 #footer {
     width: 100%;
-    background-color: #969696;
+    background-image: url('../images/footer.png');
+    background-size: cover;
     border-radius: 5px;
     height: 43px;
     display: flex;
@@ -9,7 +10,6 @@
     justify-content: center;
     align-items: center;
     border: solid 1px gray;
-    margin-top: 20px;
     position: relative;
     box-sizing: border-box;
 }
@@ -18,9 +18,21 @@
     align-items: center;
     gap: 15px;
 }
-#footer p {
-    color: white;
+.footer-brand p {
     font-family: 'Patrick Hand SC', cursive;
+    font-size: 20px;
+}
+.footer-brand  {
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.498);
+}
+.footer-brand:hover {
+    box-shadow: 3px 3px 10px;
 }
 .footer-image {
     width: 35px;

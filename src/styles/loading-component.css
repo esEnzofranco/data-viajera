@@ -1,33 +1,25 @@
-.loading-component-container {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(204, 180, 153, 0.458)
-}
 .loading-component {
-    height: 100%;
     width: 100%;
-    overflow: hidden;
-    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-.plane {
-    height: 40px;
-    animation: fly 3s linear infinite;
+    align-items: center;
 }
 .loading {
-    font-family: 'Baloo 2', sans-serif;
+    height: 45px;
+    animation: spin 1s linear infinite;
+}
+.earth {
+    width: 30px;
+    height: 30px;
     position: absolute;
-    margin: auto;
 }
 
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
 
-    @keyframes fly {
-        0% {
-            transform: translateX(-200%); /* Comienza la imagen fuera del contenedor, en la posición más a la derecha */
-          }
-          100% {
-            transform: translateX(200px); /* Termina la imagen fuera del contenedor, en la posición más a la izquierda */
-          }
-        }
+    to {
+        transform: rotate(360deg);
+    }
+}

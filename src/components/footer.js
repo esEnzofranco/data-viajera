@@ -6,7 +6,7 @@ import SocialMedia from './social-media.js';
 const Footer = () => {
     return (
         <div id="footer">
-            <a>
+            <a className="footer-brand" href="/">
                 <p>Data Viajera</p>
                 <img className="footer-image" src={palmTree} alt="footer-image" />
             </a>
